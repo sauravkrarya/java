@@ -1,24 +1,17 @@
-// A shop will give a discount of 10% if the cost of the purchased quantity is more than 1000. Ask the user for quantity Suppose, one unit will cost 100. Judge and print the total cost for the us
+//Write a Java program that uses a for-loop to print the multiplication table of a given number N.
 
+import java.util.Scanner;
 
-import java.util.*;
 public class Q3 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the quantity which you want to buy");
-        int quantity =sc.nextInt();
-        int cost=100*quantity;
-                 if  (cost>1000){
-                    System.out.println("your are eligible for discount");
-                    int after_discount=(10*cost)/100;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the number");
+        int n=sc.nextInt();
+         
+        for(int i=1;i<=10;i++){
+            System.out.println(n+"*"+i+"="+(n*i));
+        }
 
-                    System.out.println(" total bill "+ cost);
-                    System.out.println(" your discount "+ after_discount);
-          
-        }
-           else{
-                System.out.println("no discount sorry!");
-        }
     }
     
 }
